@@ -6,11 +6,10 @@ import pickle
 from collections import Counter
 from nltk.stem import WordNetLemmatizer
 import os
-BASE_FOLDER = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..'))
+BASE_FOLDER = os.path.abspath(os.path.dirname( __file__ ))
 
 pos_path = os.path.join(BASE_FOLDER, "resources/pos.txt")
 neg_path = os.path.join(BASE_FOLDER, "resources/neg.txt")
-
 
 lemmatizer = WordNetLemmatizer()
 hm_lines = 100000
